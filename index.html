@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SCOREBUG OCR — Free Scoreboard OCR for Windows & iOS</title>
-  <meta name="description" content="SCOREBUG OCR is a free sports scoreboard OCR application for Windows and iOS. It reads arena LED scoreboard images and recognizes scores, game clocks, and shot clocks in real time for vMix and OBS Studio.">
+  <title>SCOREBUG OCR — Free Scoreboard OCR for Windows</title>
+  <meta name="description" content="SCOREBUG OCR is a free sports scoreboard OCR application for Windows. It reads arena LED scoreboard images and recognizes scores, game clocks, and shot clocks in real time for vMix and OBS Studio.">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
@@ -65,7 +65,6 @@
         <a href="#workflows" class="nav-spy-link text-gray-400 hover:text-white transition">02 // WORKFLOWS</a>
         <a href="#getting-started" class="nav-spy-link text-gray-400 hover:text-white transition">03 // GET STARTED</a>
         <a href="#windows-setup" class="nav-spy-link text-gray-400 hover:text-white transition">04 // WINDOWS</a>
-        <a href="#ios-setup" class="nav-spy-link text-gray-400 hover:text-white transition">05 // iOS</a>
         <a href="#donate" onclick="openDonateModal(event)" class="text-rose-400 hover:text-rose-300 font-bold flex items-center gap-1.5 transition">
           <svg class="w-3.5 h-3.5 fill-current text-rose-500 animate-pulse" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
           <span>DONATE</span>
@@ -101,7 +100,7 @@
         </div>
         <div class="tech-kicker green">
           <span class="pulse-dot"></span>
-          <span>100% FREE TO DOWNLOAD FOR WINDOWS & iOS</span>
+          <span>100% FREE TO DOWNLOAD FOR WINDOWS</span>
         </div>
       </div>
 
@@ -118,7 +117,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12">
         <div class="lg:col-span-8">
           <p class="font-tech text-xl sm:text-2xl text-slate-300 leading-snug">
-            <strong>SCOREBUG OCR</strong> reads physical arena sports scoreboard displays using real-time optical character recognition (OCR) and delivers instant scores, game clocks, and shot clocks directly into <span class="text-white font-bold">vMix</span>, <span class="text-white font-bold">OBS Studio</span>, and <span class="text-white font-bold">Apple iOS</span> graphics overlays.
+            <strong>SCOREBUG OCR</strong> reads physical arena sports scoreboard displays using real-time optical character recognition (OCR) and delivers instant scores, game clocks, and shot clocks directly into <span class="text-white font-bold">vMix</span> and <span class="text-white font-bold">OBS Studio</span> graphics overlays.
           </p>
         </div>
         
@@ -128,7 +127,7 @@
             <span>Download SCOREBUG_OCR.exe</span>
           </a>
           <a href="#windows-setup" class="btn-editorial-ghost w-full text-center py-3 text-xs">
-            <span>Windows & iOS Setup Guide ↓</span>
+            <span>Windows Setup Guide ↓</span>
           </a>
         </div>
       </div>
@@ -149,7 +148,7 @@
         </div>
         <div class="flex items-center gap-2">
           <span class="text-cyan-400">✓</span>
-          <span>WINDOWS 10 & 11 (64-BIT) + APPLE iOS</span>
+          <span>WINDOWS 10 & 11 (64-BIT)</span>
         </div>
       </div>
 
@@ -437,18 +436,18 @@
           <div class="text-xs font-mono text-cyan-400">● Temporal stabilization</div>
         </div>
 
-        <!-- Workflow 6: Apple iOS Companion -->
+        <!-- Workflow 6: Real-Time JSON & XML Feeds -->
         <div class="editorial-card p-6">
           <div class="corner-crosshair top-left"></div>
           <div class="corner-crosshair top-right"></div>
           <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-400/30 flex items-center justify-center text-emerald-400 mb-5">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
           </div>
-          <h3 class="font-tech font-bold text-xl text-white mb-2">Apple iOS Mobile View</h3>
+          <h3 class="font-tech font-bold text-xl text-white mb-2">JSON & XML Broadcast Feeds</h3>
           <p class="text-sm text-gray-400 leading-relaxed mb-4">
-            Instant mobile scoreboard for iPhone and iPad via Safari Progressive Web App ("Add to Home Screen"). Sideline staff and producers can monitor digits wirelessly with zero latency.
+            Automatically generates unified <code class="text-emerald-300">all.json</code> and <code class="text-emerald-300">all.xml</code> data streams alongside text outputs, ideal for custom HTML/CSS scorebug overlays, CasparCG, and Ross Video systems.
           </p>
-          <div class="text-xs font-mono text-emerald-400">● Mobile scoreboard sync</div>
+          <div class="text-xs font-mono text-emerald-400">● REST & WebSocket Ready</div>
         </div>
 
       </div>
@@ -632,105 +631,7 @@
   </section>
 
   <!-- =================================================================== -->
-  <!-- 7. DEDICATED iOS SETUP SECTION -->
-  <!-- =================================================================== -->
-  <section id="ios-setup" class="min-h-screen relative flex flex-col justify-center py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5">
-    
-    <!-- Giant Background Section Number -->
-    <div class="absolute right-8 top-12 editorial-giant-num">05</div>
-
-    <div class="max-w-6xl mx-auto w-full relative z-10">
-      
-      <div class="mb-10 max-w-2xl">
-        <div class="tech-kicker mb-3">
-          <span class="pulse-dot"></span>
-          <span>05 // APPLE iOS SETUP & MOBILE CLIENT</span>
-        </div>
-        <h2 class="editorial-title text-3xl sm:text-5xl text-white mb-4">
-          APPLE iOS SETUP & SOURCE
-        </h2>
-        <p class="font-tech text-base text-gray-300">
-          The companion application runs on iPhone and iPad, allowing floor personnel and directors to monitor and adjust scores wirelessly.
-        </p>
-      </div>
-
-      <!-- iOS Installation Card -->
-      <div class="editorial-card p-8 sm:p-12 border-emerald-400/40 shadow-[0_0_50px_rgba(0,255,157,0.1)] mb-8">
-        <div class="corner-crosshair top-left"></div>
-        <div class="corner-crosshair top-right"></div>
-        <div class="corner-crosshair bottom-left"></div>
-        <div class="corner-crosshair bottom-right"></div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          
-          <div class="lg:col-span-7">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-mono font-bold mb-4">
-              <span>● FREE TO USE</span>
-              <span class="text-gray-500">•</span>
-              <span>NATIVE SWIFT & SAFARI PWA</span>
-            </div>
-
-            <h3 class="font-display font-black text-2xl sm:text-4xl text-white mb-4">
-              SCOREBUG OCR FOR iOS & iPadOS
-            </h3>
-            
-            <p class="text-sm sm:text-base text-gray-300 mb-6 leading-relaxed">
-              You can run SCOREBUG OCR on Apple devices in two ways:
-              <br><br>
-              <strong>1. Instant Safari PWA (No Mac Required):</strong> Open Safari on your iPhone/iPad connected to the same Wi-Fi, visit your PC's IP (<code class="text-emerald-300">http://&lt;PC-IP&gt;:8099/app</code>), and tap <strong>Add to Home Screen</strong>.
-              <br><br>
-              <strong>2. Native Xcode Project:</strong> Download the complete SwiftUI source code (<code class="text-emerald-300">ScoreBugOCR_iOS.zip</code>) containing <code class="text-white">ContentView.swift</code>, <code class="text-white">ScoreBugOCRApp.swift</code>, and asset catalogs.
-            </p>
-
-            <div class="p-4 rounded-xl bg-cyan-500/5 border border-cyan-500/20 text-xs font-mono text-cyan-300 mb-6">
-              ℹ Note: The Windows setup file cannot be installed on iOS. Use the Safari Web App or the Xcode source project package below.
-            </div>
-
-            <!-- iOS Action Button -->
-            <div class="flex flex-wrap gap-4">
-              <a href="ScoreBugOCR_iOS.zip" download="ScoreBugOCR_iOS.zip" onclick="downloadIosPackage(event)" class="btn-editorial-ghost text-base py-4 px-8 border-emerald-400/50 text-white hover:text-emerald-300 inline-flex">
-                <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.3c.6-1.06 1.05-2.52.88-3.99-1.22.05-2.69.82-3.52 1.8-.74.85-1.39 2.22-1.21 3.55 1.36.1 2.76-.71 3.85-1.36z"/></svg>
-                <span>Download iOS Xcode Project (.zip — 633 KB)</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right: iOS Safari PWA Step-by-Step Instructions -->
-          <div id="iosInstructionsBox" class="lg:col-span-5 bg-black/60 rounded-xl border border-white/10 p-6 font-mono text-xs text-gray-300 space-y-4">
-            <div class="text-emerald-400 font-bold border-b border-white/10 pb-2">
-              METHOD 1: INSTANT SAFARI PWA SETUP
-            </div>
-
-            <div class="flex items-start gap-3">
-              <span class="text-emerald-400 font-bold">1.</span>
-              <span>Enable <strong>Outputs → Web Server / iOS App</strong> in SCOREBUG OCR on Windows.</span>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <span class="text-emerald-400 font-bold">2.</span>
-              <span>Open <strong>Safari</strong> on your iPhone or iPad connected to the same Wi-Fi.</span>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <span class="text-emerald-400 font-bold">3.</span>
-              <span>Navigate to <code class="text-white">http://&lt;YOUR-PC-IP&gt;:8099/app</code>.</span>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <span class="text-emerald-400 font-bold">4.</span>
-              <span>Tap the <strong>Share</strong> button and select <strong>"Add to Home Screen"</strong>. SCOREBUG OCR now launches full-screen!</span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- =================================================================== -->
-  <!-- 8. SIMPLE PRODUCT FOOTER -->
+  <!-- 7. SIMPLE PRODUCT FOOTER -->
   <!-- =================================================================== -->
   <footer class="py-16 border-t border-white/10 bg-black/80 relative z-10 text-xs font-mono text-gray-400">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -752,7 +653,6 @@
         <div class="space-y-2">
           <div class="text-white font-bold mb-3 tracking-wider uppercase">Platforms</div>
           <div><a href="SCOREBUG_OCR.exe" download="SCOREBUG_OCR.exe" class="hover:text-cyan-400 transition font-semibold text-white">SCOREBUG_OCR.exe (Windows)</a></div>
-          <div><a href="ScoreBugOCR_iOS.zip" download="ScoreBugOCR_iOS.zip" class="hover:text-cyan-400 transition">Apple iOS Xcode Source (633 KB)</a></div>
           <div><a href="#recognition" class="hover:text-cyan-400 transition">OCR Calibration Lab</a></div>
           <div><a href="#workflows" class="hover:text-cyan-400 transition">vMix & OBS Workflows</a></div>
         </div>

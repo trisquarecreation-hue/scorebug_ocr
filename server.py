@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 SCOREBUG OCR — Official Web Platform Server
-Serves the website, handles file downloads for Windows & iOS packages,
+Serves the website, handles file downloads for Windows application,
 and provides zero-dependency hosting.
 """
 
@@ -14,7 +14,6 @@ PORT = int(os.environ.get("PORT", 8080))
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 WIN_ZIP = os.path.join(BASE_DIR, "SCOREBUG_OCR_Windows.zip")
-IOS_ZIP = os.path.join(BASE_DIR, "ScoreBugOCR_iOS.zip")
 
 class ScorebugWebHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
@@ -72,28 +71,7 @@ class ScorebugWebHandler(SimpleHTTPRequestHandler):
                 self.send_error(404, "Windows application package not found.")
                 return
 
-        # 2. iOS Download Route
-        if path_lower in [
-            "/scorebugocr_ios.zip",
-            "/download/ios",
-            "/download/scorebugocr_ios.zip"
-        ]:
-            if os.path.exists(IOS_ZIP):
-                file_size = os.path.getsize(IOS_ZIP)
-                self.send_response(200)
-                self.send_header("Content-Type", "application/zip")
-                self.send_header("Content-Disposition", 'attachment; filename="ScoreBugOCR_iOS.zip"')
-                self.send_header("Content-Length", str(file_size))
-                self.end_headers()
-                with open(IOS_ZIP, 'rb') as f:
-                    while chunk := f.read(64 * 1024):
-                        self.wfile.write(chunk)
-                return
-            else:
-                self.send_error(404, "iOS source package not found.")
-                return
-
-        # 3. Clean route for /thank-you
+        # 2. Clean route for /thank-you
         if path_lower in ["/thank-you", "/thankyou"]:
             target = os.path.join(BASE_DIR, "thank-you.html")
             if os.path.exists(target):
@@ -113,8 +91,7 @@ def main():
     print("  SCOREBUG OCR — Official Web Server")
     print("=======================================================")
     print(f"  * Web URL:            http://localhost:{PORT}")
-    print(f"  * Windows Download:   http://localhost:{PORT}/SCOREBUG_OCR_Windows.zip")
-    print(f"  * iOS Download:       http://localhost:{PORT}/ScoreBugOCR_iOS.zip")
+    print(f"  * Windows Download:   http://localhost:{PORT}/SCOREBUG_OCR.exe")
     print(f"  * Project Directory:  {BASE_DIR}")
     print("=======================================================")
     try:
